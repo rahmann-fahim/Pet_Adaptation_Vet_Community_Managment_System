@@ -12,7 +12,7 @@ session_start();
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
+<script src="js/script.js"></script>  
 <div class="form-container">
 
    <form action="../controller/registerController.php" method="post">
