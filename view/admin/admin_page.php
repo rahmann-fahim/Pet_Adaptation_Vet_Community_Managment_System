@@ -44,7 +44,8 @@ if(!isset($_SESSION['admin_name'])){
     </div>
   </section>
 
-  <!-- Admin Search -->
+
+
   <section class="pet-search text-center">
     <div class="container">
       <form action="admin_page.php" method="GET">

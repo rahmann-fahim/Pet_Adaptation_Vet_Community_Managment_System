@@ -71,7 +71,7 @@ if(isset($_POST['update_user'])){
   </div>
 </section>
 
-<!-- Edit User Form -->
+
 <section class="pet-search text-center">
   <div class="container">
     <h2>Edit User</h2>
