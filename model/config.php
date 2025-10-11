@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','pet_adoption_management_system');
+$conn = mysqli_connect('localhost','root','','pet_adoption_managment_system');
 
 ?>

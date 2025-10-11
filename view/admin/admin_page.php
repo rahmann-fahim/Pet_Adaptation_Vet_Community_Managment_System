@@ -19,22 +19,55 @@ if(!isset($_SESSION['admin_name'])){
    <title>admin page</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/style_user.css">
 
 </head>
 <body>
-   
-<div class="container">
+  <!--page side bar -->
+   <!-- Navbar -->
+  <section class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="admin_page.php"><img src="../images/logo.png" alt="Logo" class="img-responsive" /></a>
+      </div>
+      <div class="menu text-left">
+        <ul type="dashboard">
+            <li><a href="admin_page.php">Dashboard</a></li>
+            <li><a href="categories_admin.php">Categories</a></li>
+            <li><a href="Manage_user.php">Manage Users</a></li>
+            <li><a href="manage_staff.php">Manage Staff</a></li>
+             <li><a href="../logout.php">Logout</a></li>
+         </ul>
+      </div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </section>
 
-   <div class="content">
-      <h3>hi, <span>admin</span></h3>
-      <h1>welcome <span><?php echo $_SESSION['admin_name'] ?></span></h1>
-      <p>this is an admin page</p>
-      <a href="../login_form.php" class="btn">login</a>
-      <a href="../logout.php" class="btn">logout</a>
-   </div>
+  <!-- Admin Search -->
+  <section class="pet-search text-center">
+    <div class="container">
+      <form action="admin_page.php" method="GET">
+       
+      </form>
+    </div>
+  </section>
 
-</div>
+  
 
+  <!-- Social Section -->
+  <section class="social">
+    <div class="container text-center">
+      <ul type="none">
+        <li><a href="#"><img src="../images/facebook.png" alt="facebook" class="social-img img-responsive"></a></li>
+        <li><a href="#"><img src="../images/instagram.png" alt="instagram" class="social-img img-responsive"></a></li>
+        <li><a href="#"><img src="../images/twitter.png" alt="twitter" class="social-img img-responsive"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <?php include("../footer/footer_1.php"); ?>
+
+  
 </body>
 </html>
