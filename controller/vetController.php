@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $pet_type    = mysqli_real_escape_string($conn, $_POST['pet-type']);
     $pet_details = mysqli_real_escape_string($conn, $_POST['address']); 
 
-    // Insert into database
+    
     $result = insertVetRequest($conn, $fullname, $contact, $email, $pet_type, $pet_details);
 
     if ($result) {

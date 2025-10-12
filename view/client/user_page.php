@@ -11,7 +11,7 @@ if(!isset($_SESSION['user_name'])){
 
 
 if (isset($_GET['search'])) {
-    $search = strtolower(trim($_GET['search']));// clean input, remove spaces and make All case to lowercase.
+    $search = strtolower(trim($_GET['search']));
 
     if ($search == 'dog') {
         header("Location: ../category-dog.php");
@@ -43,15 +43,13 @@ if (isset($_GET['search'])) {
 </head>
 
 <body>
-  <!--HTML Navbar Section Starts here  -->
   <section class="navbar">
     <div class="container">
       <div class="logo">
-        <!-- Logo Image -->
         <a href="user_page.php"><img src="../images/logo.png" alt="Pet Adaptation Navbar Logo" class="img-responsive" /></a>
       </div>
       <div class="menu text-right">
-        <!-- Menu Will be displayed Here -->
+        
         <ul type="none">
             <li><a href="user_page.php">Home</a></li>
             <li><a href="../categories.php">Categories</a></li>
@@ -64,9 +62,9 @@ if (isset($_GET['search'])) {
       <div class="clearfix"></div>
     </div>
   </section>
-  <!--HTML Navbar Section Ends here  -->
+  
 
-  <!--HTML Pet Search Section Starts here  -->
+  
   <section class="pet-search text-center">
     <div class="container">
     <form action="user_page.php" method="GET">
@@ -76,8 +74,7 @@ if (isset($_GET['search'])) {
 
     </div>
   </section>
-  <!--HTML Pet Search Section Ends here  -->
-  <!--HTML Pet Categories Section Starts here  -->
+ 
   <section class="categories">
     <div class="container">
       <h2 class="text-center">Categories</h2>
@@ -98,18 +95,16 @@ if (isset($_GET['search'])) {
           <img src="../images/fish.png" alt="fish" class="img-responsive img-curve img-bg categories-img" />
           <h3 class="text-center text-orange">Fish</h3>
         </div>
-        <!-- clear floating -->
+       
         <div class="clearfix"></div>
     </div>
     </a>
   </section>
-  <!--HTML Pet Categories Section Ends here  -->
-  <!--HTML Pet Menu Section Starts here  -->
+
   <section class="pet-menu">
     <div class="container">
       <h2 class="text-center">Explore Pets</h2>
-      <!-- <br> -->
-      <!-- pet menu box start here -->
+     
       <div class="pet-menu-box">
         <div class="pet-menu-img">
           <img src="../images/menu-dog-1.png" alt="" class="img-curve img-responsive">
@@ -120,10 +115,10 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+         
         </div>
       </div>
-      <!-- pet menu box ends here  -->
+      
       <div class="pet-menu-box">
         <div class="pet-menu-img">
           <img src="../images/menu-dog-2.png" alt="" class="img-curve img-responsive">
@@ -134,7 +129,7 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+          
         </div>
       </div>
       <div class="pet-menu-box">
@@ -147,7 +142,7 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+         
         </div>
       </div>
       <div class="pet-menu-box">
@@ -160,7 +155,7 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+          
         </div>
       </div>
       <div class="pet-menu-box">
@@ -173,7 +168,7 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+         
         </div>
       </div>
       <div class="pet-menu-box">
@@ -186,7 +181,7 @@ if (isset($_GET['search'])) {
           <p class="pet-desc">Health condition is perfect</p>
           <br>
           <a href="../adopt.php" class="btn btn-primary">Adopt</a>
-          <!-- basically ends here -->
+         
         </div>
       </div>
       <div class="clearfix"></div>
@@ -196,8 +191,7 @@ if (isset($_GET['search'])) {
     </p>
   </section>
 
-  <!--HTML Pet Menu Section Ends here  -->
-  <!-- Social Section Starts Here -->
+  
   <section class="social">
     <div class="container text-center">
       <ul type="none">
@@ -213,7 +207,7 @@ if (isset($_GET['search'])) {
       </ul>
     </div>
   </section>
-  <!-- Social Section Ends Here -->
+  
   
 </body>
 

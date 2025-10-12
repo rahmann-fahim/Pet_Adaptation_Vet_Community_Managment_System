@@ -23,7 +23,7 @@ session_start();
          foreach($_SESSION['register_error'] as $error){
             echo '<span class="error-msg">'.$error.'</span>';
          }
-         unset($_SESSION['register_error']); // clear after showing once
+         unset($_SESSION['register_error']); 
       }
       ?>
 

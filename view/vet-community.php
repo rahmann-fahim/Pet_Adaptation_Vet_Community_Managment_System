@@ -15,7 +15,7 @@ session_start();
 </head>
 
 <body>
-    <!-- Navbar Section -->
+    
     <section class="navbar">
         <div class="container">
             <div class="logo">
@@ -42,7 +42,7 @@ session_start();
     <section class="pet-search">
         <div class="container">
 
-            <!-- Display success or error messages -->
+           
             <?php
             if (isset($_SESSION['success'])) {
                 echo "<p style='color:green; text-align:center;'>".$_SESSION['success']."</p>";
@@ -81,7 +81,7 @@ session_start();
         </div>
     </section>
 
-    <!-- Social Section -->
+    
     <section class="social">
         <div class="container text-center">
             <ul type="none">

@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="css/style_user.css" />
     <link rel="icon" href="images/favicon.png" />
 </head>
-<!-- <img src="images/logo.png" alt="Pet Adaptation Navbar Logo" class="img-responsive" /> -->
-<!--HTML Navbar Section Starts here  -->
+
 <section class="navbar">
     <div class="container">
         <div class="logo">
-            <!-- Logo Image -->
+            
             <a href="client/user_page.php"><img src="images/logo.png" alt="Pet Adaptation Navbar Logo"
                     class="img-responsive" /></a>
         </div>
         <div class="menu text-right">
-            <!-- Menu Will be displayed Here -->
+            
             <ul type="none">
                 <li><a href="client/user_page.php">Home</a></li>
                 <li><a href="categories.php">Categories</a></li>
@@ -31,21 +30,18 @@
         <div class="clearfix"></div>
     </div>
 </section>
-<!--HTML Navbar Section Ends here  -->
 
-<!-- HTML category  -->
 <section class="pet-search text-center">
     <br>
     <br>
     <br>
 </section>
 
-<!--HTML Pet Menu Section Starts here  -->
+
 <section class="pet-menu">
     <div class="container">
         <h2 class="text-center">Pets on <a href="#" class="text-orange text-center">"Cat"</a> Category</h2>
-        <!-- <br> -->
-        <!-- pet menu box start here -->
+       
         <div class="pet-menu-box">
             <div class="pet-menu-img">
                 <img src="images/cat1.png" alt="" class="img-curve img-responsive">
@@ -56,10 +52,10 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+               
             </div>
         </div>
-        <!-- pet menu box ends here  -->
+        
         <div class="pet-menu-box">
             <div class="pet-menu-img">
                 <img src="images/cat2.png" alt="" class="img-curve img-responsive">
@@ -70,7 +66,7 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+                
             </div>
         </div>
         <div class="pet-menu-box">
@@ -83,7 +79,7 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+                
             </div>
         </div>
         <div class="pet-menu-box">
@@ -96,7 +92,7 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+               
             </div>
         </div>
         <div class="pet-menu-box">
@@ -109,7 +105,7 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+                
             </div>
         </div>
         <div class="pet-menu-box">
@@ -122,15 +118,14 @@
                 <p class="pet-desc">Health condition is perfect</p>
                 <br>
                 <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                <!-- basically ends here -->
+                
             </div>
         </div>
         <div class="clearfix"></div>
     </div>
 </section>
 <div class="mp-21"></div>
-<!--HTML Pet Menu Section Ends here  -->
-<!-- Social Section Starts Here -->
+
 <section class="social">
     <div class="container text-center">
         <ul type="none">
@@ -146,8 +141,7 @@
         </ul>
     </div>
 </section>
-<!-- Social Section Ends Here -->
-<!-- Footer Section Starts Here -->
+
 
 </body>
 

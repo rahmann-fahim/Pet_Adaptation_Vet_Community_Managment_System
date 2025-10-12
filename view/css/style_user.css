@@ -9,7 +9,6 @@
 
 .container {
   width: 80%;
-  /* border: 1px dotted red; */
   margin: 0 auto;
   padding: 1%;
 }
@@ -69,11 +68,12 @@ a:hover {
   /* width: 50%; */
 }
 
-/* css for navbar section */
+
+
+/* css for navbar */
 
 .logo {
   width: 10%;
-  /* for going to the left we are using it */
   float: left;
 }
 
@@ -91,11 +91,9 @@ a:hover {
   font-weight: bold;
 }
 
-/* .menu ul li a{
-  color: black;
-} */
 
-/* CSS for pet search section */
+
+/* CSS for pet search */
 
 .pet-search {
   background-image: url(../images/bg.png);
@@ -113,13 +111,13 @@ a:hover {
   border-radius: 5px;
 }
 
+
 /* CSS for  categories*/
 .categories {
   padding: 4% 0;
 }
 
 .box-3 {
-  /* border: 1px solid black; */
   width: 28%;
   float: left;
   margin: 2%;
@@ -152,7 +150,7 @@ a:hover {
 /* when clicked on a category
 .text-category{
   background-color: white;
-  padding: %;
+  padding: ;
 } */
 
 h3 {
@@ -163,7 +161,7 @@ h3 {
 /* CSS for pet menu */
 .pet-menu {
   background-color: antiquewhite;
-  /* padding: 4% 0;  */
+  /* padding: 4px 0;  */
 }
 
 .pet-menu-box {
@@ -218,7 +216,7 @@ h3 {
   margin-bottom: 1%;
 }
 
-/* copied from an external source */
+
 
 /* for Adopt Section */
 
@@ -255,78 +253,8 @@ h3 {
   margin-bottom: 1%;
 }
 
-/*  */
 
-/* CSS for mobile size or smaller screen */
 
-@media only screen and (max-width: 768px) {
-  .logo {
-    width: 40%;
-    margin: 1% auto;
-    float: none;
-  }
 
-  .menu ul {
-    text-align: center;
-  }
 
-  .pet-search input[type="search"] {
-    width: 90%;
-    padding: 2%;
-    margin-bottom: 5%;
-  }
-
-  .pet-search {
-    padding: 10% 0;
-  }
-
-  .btn {
-    width: 91%;
-    padding: 2%;
-  }
-
-  h2 {
-    margin-bottom: 10%;
-  }
-
-  .error {
-    margin-top: 2%;
-    padding: 2%;
-    color: red;
-  }
-
-  .success {
-    margin-top: 2%;
-    padding: 2%;
-    color: green;
-  }
-
-  .box-3 {
-    width: 95%;
-    margin: 4% auto;
-  }
-
-  .pet-menu {
-    padding: 20% 0;
-  }
-
-  .pet-menu-box {
-    width: 90%;
-    padding: 5%;
-    margin-bottom: 5%;
-  }
-
-  .social {
-    padding: 5% 0;
-  }
-
-  .social-img {
-    width: 15%;
-  }
-
-  /* center */
-  .btn-center {
-    margin: 2% 4.25%;
-  }
-}
 

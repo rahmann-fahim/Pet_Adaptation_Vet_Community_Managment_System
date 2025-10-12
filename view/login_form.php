@@ -27,7 +27,7 @@ session_start();
          foreach($_SESSION['login_error'] as $error){
             echo '<span class="error-msg">'.$error.'</span>';
          }
-         unset($_SESSION['login_error']); // clear error after showing once
+         unset($_SESSION['login_error']);
       }
       ?>
 

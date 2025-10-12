@@ -22,7 +22,7 @@ session_start();
       <h3>Hi, <span>Staff</span></h3>
 
       <p>This is the staff page</p>
-      <a href="logout.php" class="btn">Logout</a>
+      <a href="../logout.php" class="btn">Logout</a>
    </div>
 </div>
 

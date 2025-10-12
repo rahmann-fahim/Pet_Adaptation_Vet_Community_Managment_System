@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   // check email in 3 tables
+   
    $exists_admin = findAdmin($conn, $email, $pass);
    $exists_staff = findStaff($conn, $email, $pass);
    $exists_client = findClient($conn, $email, $pass);

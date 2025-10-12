@@ -41,7 +41,6 @@ session_start();
     <section class="pet-search">
         <div class="container">
 
-            <!-- Display success or error messages -->
             <?php
             if (isset($_SESSION['success'])) {
                 echo "<p style='color:green; text-align:center;'>".$_SESSION['success']."</p>";

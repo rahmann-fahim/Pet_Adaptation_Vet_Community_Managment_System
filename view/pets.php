@@ -33,16 +33,16 @@ if (isset($_GET['submit'])) {
 </head>
 
 <body>
-    <!--HTML Navbar Section Starts here  -->
+    
     <section class="navbar">
         <div class="container">
             <div class="logo">
-                <!-- Logo Image -->
+                
                 <a href="client/user_page.php"><img src="images/logo.png" alt="Pet Adaptation Navbar Logo"
                         class="img-responsive" /></a>
             </div>
             <div class="menu text-right">
-                <!-- Menu Will be displayed Here -->
+               
                 <ul>
                    <li><a href="client/user_page.php">Home</a></li>
                     <li><a href="categories.php">Categories</a></li>
@@ -54,9 +54,7 @@ if (isset($_GET['submit'])) {
             <div class="clearfix"></div>
         </div>
     </section>
-    <!--HTML Navbar Section Ends here  -->
-
-    <!--HTML Pet Search Section Starts here  -->
+    
     <section class="pet-search text-center">
         <div class="container">
         <form action="pets.php" method="get">
@@ -66,14 +64,11 @@ if (isset($_GET['submit'])) {
 
         </div>
     </section>
-    <!--HTML Pet Search Section Ends here  -->
-
-    <!--HTML Pet Menu Section Starts here  -->
+   
     <section class="pet-menu">
         <div class="container">
             <h2 class="text-center">Explore Pets</h2>
-            <!-- <br> -->
-            <!-- pet menu box start here -->
+           
             <div class="pet-menu-box">
                 <div class="pet-menu-img">
                     <img src="images/menu-dog-1.png" alt="" class="img-curve img-responsive">
@@ -84,10 +79,10 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
-            <!-- pet menu box ends here  -->
+            
             <div class="pet-menu-box">
                 <div class="pet-menu-img">
                     <img src="images/menu-cat-1.png" alt="" class="img-curve img-responsive">
@@ -98,7 +93,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                   
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -111,7 +106,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                   
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -124,7 +119,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -137,7 +132,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -150,7 +145,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -163,7 +158,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -176,7 +171,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="pet-menu-box">
@@ -189,7 +184,7 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
 
@@ -203,16 +198,16 @@ if (isset($_GET['submit'])) {
                     <p class="pet-desc">Health condition is perfect</p>
                     <br>
                     <a href="adopt.php" class="btn btn-primary">Adopt</a>
-                    <!-- basically ends here -->
+                    
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
     </section>
 
-    <!--HTML Pet Menu Section Ends here  -->
+    
     <div class="mp-21"></div>
-    <!-- Social Section Starts Here -->
+   
     <section class="social">
         <div class="container text-center">
             <ul type="none">
@@ -228,8 +223,7 @@ if (isset($_GET['submit'])) {
             </ul>
         </div>
     </section>
-    <!-- Social Section Ends Here -->
-    <!-- Footer Section Starts Here -->
+   
     
 </body>
 

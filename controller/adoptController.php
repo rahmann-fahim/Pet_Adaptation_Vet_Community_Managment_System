@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $email    = mysqli_real_escape_string($conn, $_POST['email']);
     $address  = mysqli_real_escape_string($conn, $_POST['address']);
 
-    // Insert into database
+    
     $result = insertAdoptInfo($conn, $fullname, $contact, $email, $address);
 
     if ($result) {
