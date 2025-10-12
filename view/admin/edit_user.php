@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
    exit();
 }
 
-/
+
 if(!isset($_GET['id'])){
    header('location:manage_user.php');
    exit();
@@ -79,11 +79,7 @@ if(isset($_POST['update_user'])){
       <input type="text" name="name" placeholder="User Name" value="<?php echo htmlspecialchars($user['name']); ?>" required>
       <input type="email" name="email" placeholder="User Email" value="<?php echo htmlspecialchars($user['email']); ?>" required>
       <input type="password" name="password" placeholder="New Password (leave blank to keep current)">
-      <select name="user_type" required>
-         <option value="user" <?php if($user['user_type'] == 'user') echo 'selected'; ?>>User</option>
-         <option value="admin" <?php if($user['user_type'] == 'admin') echo 'selected'; ?>>Admin</option>
-         <option value="staff" <?php if($user['user_type'] == 'staff') echo 'selected'; ?>>Staff</option>
-      </select>
+      
       <input type="submit" name="update_user" value="Update User" class="btn btn-primary">
     </form>
   </div>
