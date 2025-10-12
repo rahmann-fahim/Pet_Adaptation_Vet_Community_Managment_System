@@ -18,13 +18,13 @@ if(!isset($_SESSION['admin_name'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>admin page</title>
 
-   <!-- custom css file link  -->
+   
    <link rel="stylesheet" href="../css/style_user.css">
 
 </head>
 <body>
-  <!--page side bar -->
-   <!-- Navbar -->
+  
+  
   <section class="navbar">
     <div class="container">
       <div class="logo">
@@ -45,7 +45,6 @@ if(!isset($_SESSION['admin_name'])){
   </section>
 
 
-
   <section class="pet-search text-center">
     <div class="container">
       <form action="admin_page.php" method="GET">
@@ -55,10 +54,8 @@ if(!isset($_SESSION['admin_name'])){
   </section>
 
   
-
-  <!-- Social Section -->
   <section class="social">
-    <div class="container text-center">
+                 <div class="container text-center">
       <ul type="none">
         <li><a href="#"><img src="../images/facebook.png" alt="facebook" class="social-img img-responsive"></a></li>
         <li><a href="#"><img src="../images/instagram.png" alt="instagram" class="social-img img-responsive"></a></li>

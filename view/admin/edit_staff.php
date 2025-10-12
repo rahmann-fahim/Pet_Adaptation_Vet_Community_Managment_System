@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
    exit();
 }
 
-// Check if ID is passed
+
 if(!isset($_GET['id'])){
    header('location:manage_staff.php');
    exit();
@@ -15,7 +15,7 @@ if(!isset($_GET['id'])){
 
 $id = intval($_GET['id']);
 
-// Fetch existing staff data
+
 $result = mysqli_query($conn, "SELECT * FROM tbl_staff WHERE id = $id");
 if(mysqli_num_rows($result) == 0){
    header('location:manage_staff.php');
@@ -23,7 +23,7 @@ if(mysqli_num_rows($result) == 0){
 }
 $staff = mysqli_fetch_assoc($result);
 
-// Handle form submission for update
+
 if(isset($_POST['update_staff'])){
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -31,11 +31,11 @@ if(isset($_POST['update_staff'])){
    $password = $_POST['password'];
 
    if(!empty($password)){
-      // Update with new password
+      
       $hashed_password = password_hash($password, PASSWORD_DEFAULT);
       $query = "UPDATE tbl_staff SET name='$name', email='$email', password='$hashed_password', user_type='$user_type' WHERE id=$id";
    } else {
-      // Update without changing password
+      
       $query = "UPDATE tbl_staff SET name='$name', email='$email', user_type='$user_type' WHERE id=$id";
    }
 
@@ -55,7 +55,7 @@ if(isset($_POST['update_staff'])){
 </head>
 <body>
 
-<!-- Navbar -->
+
 <section class="navbar">
   <div class="container">
     <div class="logo">
@@ -71,7 +71,7 @@ if(isset($_POST['update_staff'])){
   </div>
 </section>
 
-<!-- Edit Staff Form -->
+
 <section class="pet-search text-center">
   <div class="container">
     <h2>Edit Staff</h2>
@@ -87,7 +87,7 @@ if(isset($_POST['update_staff'])){
   </div>
 </section>
 
-<!-- Footer -->
+
 <?php include("../footer/footer_1.php"); ?>
 
 </body>

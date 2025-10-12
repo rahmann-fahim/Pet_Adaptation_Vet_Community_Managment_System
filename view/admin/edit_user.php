@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
    exit();
 }
 
-// Check if ID is passed
+/
 if(!isset($_GET['id'])){
    header('location:manage_user.php');
    exit();
@@ -15,7 +15,7 @@ if(!isset($_GET['id'])){
 
 $id = intval($_GET['id']);
 
-// Fetch existing user data
+
 $result = mysqli_query($conn, "SELECT * FROM tbl_client WHERE id = $id");
 if(mysqli_num_rows($result) == 0){
    header('location:manage_user.php');
@@ -23,7 +23,7 @@ if(mysqli_num_rows($result) == 0){
 }
 $user = mysqli_fetch_assoc($result);
 
-// Handle form submission for update
+
 if(isset($_POST['update_user'])){
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -31,11 +31,11 @@ if(isset($_POST['update_user'])){
    $password = $_POST['password'];
 
    if(!empty($password)){
-      // Update with new password
+     
       $hashed_password = password_hash($password, PASSWORD_DEFAULT);
       $query = "UPDATE tbl_client SET name='$name', email='$email', password='$hashed_password', user_type='$user_type' WHERE id=$id";
    } else {
-      // Update without changing password
+     
       $query = "UPDATE tbl_client SET name='$name', email='$email', user_type='$user_type' WHERE id=$id";
    }
 
@@ -55,7 +55,7 @@ if(isset($_POST['update_user'])){
 </head>
 <body>
 
-<!-- Navbar -->
+
 <section class="navbar">
   <div class="container">
     <div class="logo">
@@ -89,7 +89,7 @@ if(isset($_POST['update_user'])){
   </div>
 </section>
 
-<!-- Footer -->
+
 <?php include("../footer/footer_1.php"); ?>
 
 </body>

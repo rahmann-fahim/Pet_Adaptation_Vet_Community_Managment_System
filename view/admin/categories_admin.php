@@ -11,12 +11,10 @@
 </head>
 
 <body>
-    <!--HTML Navbar Section Starts here  -->
     <section class="navbar">
         <div class="container">
             <div class="logo">
-                <!-- Logo Image -->
-                <a href="admin_page.php"><img src="../images/logo.png" alt="Pet Adaptation Navbar Logo" class="img-responsive" /></a>
+           <a href="admin_page.php"><img src="../images/logo.png" alt="Pet Adaptation Navbar Logo" class="img-responsive" /></a>
             </div>
             <div class="menu text-right">
                
@@ -28,35 +26,33 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <!--HTML Navbar Section Ends here  -->
-    <!-- HTML category  -->
-    <section class="pet-search text-center">
+    
+           <section class="pet-search text-center">
         <br>
         <br>
         <br>
-        <!-- <br> -->
+       
     </section>
 
-    <!--HTML Pet Categories Section Starts here  -->
     <section class="categories">
         <div class="container">
             <h2 class="text-center">Explore Categories</h2>
             <a href="#">
                 <div class="box-3">
-                    <img src="../images/dog.png" alt="dog-1" class="img-responsive img-curve img-bg categories-img" />
-                    <h3 class="text-center text-orange">Dog</h3>
+                                   <img src="../images/dog.png" alt="dog-1" class="img-responsive img-curve img-bg categories-img" />
+                                   <h3 class="text-center text-orange">Dog</h3>
                 </div>
             </a>
             <a href="#">
                 <div class="box-3">
-                    <img src="../images/cat.png" alt="cat-1" class="img-responsive img-curve img-bg categories-img" />
-                    <h3 class="text-center text-orange">Cat</h3>
+                                  <img src="../images/cat.png" alt="cat-1" class="img-responsive img-curve img-bg categories-img" />
+                                   <h3 class="text-center text-orange">Cat</h3>
                 </div>
             </a>
             <a href="#">
                 <div class="box-3">
-                    <img src="../images/bird.png" alt="bird-1" class="img-responsive img-curve img-bg categories-img" />
-                    <h3 class="text-center text-orange">Bird</h3>
+                                 <img src="../images/bird.png" alt="bird-1" class="img-responsive img-curve img-bg categories-img" />
+                                   <h3 class="text-center text-orange">Bird</h3>
                 </div>
             </a>
             <a href="#">
@@ -65,46 +61,42 @@
                     <h3 class="text-center text-orange">Fish</h3>
                 </div>
             </a>
-            <a href="#">
-                <div class="box-3">
-                    <img src="../images/duck.png" alt="dog-1" class="img-responsive img-curve img-bg categories-img" />
-                    <h3 class="text-center text-orange">Duck</h3>
-                </div>
+                    <a href="#">
+                      <div class="box-3">
+                      <img src="../images/duck.png" alt="dog-1" class="img-responsive img-curve img-bg categories-img" />
+                          <h3 class="text-center text-orange">Duck</h3>
+            </div>
             </a>
-            <!-- <a href="">
-                <div class="box-3">
-                    <img src="images/chicken.png" alt="dog-1" class="img-responsive img-curve img-bg categories-img" />
-                    <h3 class="text-center text-orange">Chicken</h3>
-                </div>
-            </a> -->
+            
+            
             <a href="#">
                 <div class="box-3 ">
                     <img src="../images/shrimp.png" alt="shrimp" class="img-responsive img-curve img-bg categories-img" />
                     <h3 class="text-center text-orange">Shrimp</h3>
                 </div>
-                <!-- clear floating -->
+              
                 <div class="clearfix"></div>
         </div>
         </a>
     </section>
-    <!--HTML Pet Categories Section Ends here  -->
-    <!-- Social Section Starts Here -->
-    <section class="social">
+  
+    
+       <section class="social">
         <div class="container text-center">
             <ul type="none">
                 <li>
                     <a href="#"><img src="../images/facebook.png" alt="facebook" class="social-img img-responsive"></a>
                 </li>
-                <li>
-                    <a href="#"><img src="../images/instagram.png" alt="instagram" class="social-img img-responsive"></a>
-                </li>
+            <li>
+                 <a href="#"><img src="../images/instagram.png" alt="instagram" class="social-img img-responsive"></a>
+             </li>
                 <li>
                     <a href="#"><img src="../images/twitter.png" alt="twitter" class="social-img img-responsive"></a>
                 </li>
             </ul>
         </div>
     </section>
-    <!-- Social Section Ends Here -->
+   
     
 </body>
 

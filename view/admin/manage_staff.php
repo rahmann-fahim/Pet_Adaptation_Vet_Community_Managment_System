@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
    exit();
 }
 
-// Handle Delete Request
+
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     mysqli_query($conn, "DELETE FROM tbl_staff WHERE id = $id");
@@ -15,7 +15,7 @@ if (isset($_GET['delete'])) {
     exit();
 }
 
-// Handle Add Staff Form Submission
+
 if (isset($_POST['add_staff'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -31,7 +31,7 @@ if (isset($_POST['add_staff'])) {
     }
 }
 
-// Fetch all staff
+
 $staffs = mysqli_query($conn, "SELECT * FROM tbl_staff");
 ?>
 
@@ -46,7 +46,7 @@ $staffs = mysqli_query($conn, "SELECT * FROM tbl_staff");
 </head>
 <body>
 
-<!-- Navbar -->
+
 <section class="navbar">
   <div class="container">
     <div class="logo">
@@ -62,7 +62,7 @@ $staffs = mysqli_query($conn, "SELECT * FROM tbl_staff");
   </div>
 </section>
 
-<!-- Add Staff Form -->
+
 <section class="pet-search text-center">
   <div class="container">
     <h2>Add New Staff</h2>
@@ -76,7 +76,7 @@ $staffs = mysqli_query($conn, "SELECT * FROM tbl_staff");
   </div>
 </section>
 
-<!-- Staff List -->
+
 <section class="pet-menu">
   <div class="container">
     <h2 class="text-center">All Staff Members</h2>
@@ -104,7 +104,7 @@ $staffs = mysqli_query($conn, "SELECT * FROM tbl_staff");
   </div>
 </section>
 
-<!-- Social Section -->
+
 <section class="social">
   <div class="container text-center">
     <ul type="none">

@@ -7,7 +7,7 @@ if(!isset($_SESSION['admin_name'])){
    exit();
 }
 
-// Handle Delete Request
+
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     mysqli_query($conn, "DELETE FROM tbl_client WHERE id = $id");
@@ -15,7 +15,6 @@ if (isset($_GET['delete'])) {
     exit();
 }
 
-// Handle Add User Form Submission
 if (isset($_POST['add_user'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -31,7 +30,6 @@ if (isset($_POST['add_user'])) {
     }
 }
 
-// Fetch all users
 $users = mysqli_query($conn, "SELECT * FROM tbl_client");
 ?>
 
@@ -46,7 +44,7 @@ $users = mysqli_query($conn, "SELECT * FROM tbl_client");
 </head>
 <body>
 
-<!-- Navbar -->
+
 <section class="navbar">
   <div class="container">
     <div class="logo">
@@ -62,7 +60,7 @@ $users = mysqli_query($conn, "SELECT * FROM tbl_client");
   </div>
 </section>
 
-<!-- Add User Form -->
+
 <section class="pet-search text-center">
   <div class="container">
     <h2>Add New User</h2>
@@ -76,7 +74,7 @@ $users = mysqli_query($conn, "SELECT * FROM tbl_client");
   </div>
 </section>
 
-<!-- User List -->
+
 <section class="pet-menu">
   <div class="container">
     <h2 class="text-center">All Registered Users</h2>
@@ -104,7 +102,7 @@ $users = mysqli_query($conn, "SELECT * FROM tbl_client");
   </div>
 </section>
 
-<!-- Social Section -->
+
 <section class="social">
   <div class="container text-center">
     <ul type="none">
