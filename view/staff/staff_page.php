@@ -3,6 +3,10 @@
 session_start();
 
 
+if (!isset($_SESSION['staff_name'])) {
+    header('location:../login_form.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,20 +15,49 @@ session_start();
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Staff Page</title>
+   <title>Staff Dashboard</title>
    <link rel="stylesheet" href="../css/style_user.css">
 </head>
 <body>
 
-<div class="container">
-   <div class="content">
 
-      <h3>Hi, <span>Staff</span></h3>
+<section class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="staff_page.php"><img src="../images/logo.png" alt="Logo" class="img-responsive" /></a>
+    </div>
+    <div class="menu text-left">
+      <ul>
+          <li><a href="staff_page.php">Dashboard</a></li>
+          <li><a href="manage_pet.php">Manage Pet</a></li>
+          <li><a href="see_pet.php">See Pet</a></li>
+          <li><a href="see_adoption_list.php">See Adoption List</a></li>
+          <li><a href="../logout.php">Logout</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</section>
 
-      <p>This is the staff page</p>
-      <a href="../logout.php" class="btn">Logout</a>
-   </div>
-</div>
+
+<section class="pet-search text-center">
+  <div class="container">
+   
+  </div>
+</section>
+
+
+<section class="social">
+  <div class="container text-center">
+    <ul type="none">
+      <li><a href="#"><img src="../images/facebook.png" alt="facebook" class="social-img img-responsive"></a></li>
+      <li><a href="#"><img src="../images/instagram.png" alt="instagram" class="social-img img-responsive"></a></li>
+      <li><a href="#"><img src="../images/twitter.png" alt="twitter" class="social-img img-responsive"></a></li>
+    </ul>
+  </div>
+</section>
+
+
 
 </body>
 </html>
